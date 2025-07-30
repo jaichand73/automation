@@ -12,10 +12,7 @@ module.exports = defineConfig({
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
     ignoreHTTPSErrors: true,
-    launchOptions: {
-      slowMo: 50, // Slow down by 50ms to see actions
-      headless: false, // Run tests in headful mode for debugging
-    },
+      headless: true, // Run tests in headful mode for debugging
     // Configure context options
     contextOptions: {
       viewport: { width: 1280, height: 720 }, // Set viewport size
