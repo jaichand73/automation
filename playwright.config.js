@@ -21,19 +21,14 @@ module.exports = defineConfig({
       viewport: { width: 1280, height: 720 }, // Set viewport size
       ignoreHTTPSErrors: true, // Ignore HTTPS errors
     },
-  
     trace: 'on-first-retry',
   },
-
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-
   ],
-
-
 });
 
