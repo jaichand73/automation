@@ -6,6 +6,9 @@ module.exports = defineConfig({
   reporter: 'html',
   workers: 1,
   timeout: 120000, // Set a global timeout for tests
+  expect: {
+    timeout: 60000, // Set a timeout for expect assertions
+  },
   use: {
     baseURL: 'https://stage.talentpecker.com',
     screenshot: 'only-on-failure',
