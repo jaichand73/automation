@@ -5,6 +5,8 @@ module.exports = defineConfig({
   fullyParallel: true,
   reporter: 'html',
   workers: 1,
+  // retries: 2,
+  
   timeout: 120000, // Set a global timeout for tests
   expect: {
     timeout: 60000, // Set a timeout for expect assertions
